@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>Web Gampong Tibang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ========== SCRIPT UNTUK MENU ACTIVE ========== -->
+    <script>
+        const links = document.querySelectorAll("nav ul li a");
+        links.forEach(link => {
+            link.addEventListener("click", function() {
+                links.forEach(l => l.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    </script>
+
+    <!-- ========== HEADER DENGAN PESAN BERJALAN ========== -->
+    <header>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>🔊 Selamat Datang di Website Resmi Gampong Tibang! Silakan kunjungi menu untuk informasi terbaru, layanan, dan kegiatan Gampong 🌿✨</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            
+            <li class="dropdown">
+                <a href="#">Berita ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Berita Gampong</a></li>
+                    <li><a href="#">Pengumuman</a></li>
+                    <li><a href="#">Kegiatan</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Profil Gampong ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Profil Wilayah Desa</a></li>
+                    <li><a href="#">Sejarah Desa</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Pemerintahan Desa</a></li>
+            <li><a href="#">Data Desa</a></li>
+
+            <li class="dropdown">
+                <a href="#">KPM Tematik Pojok Statistik UINAR ▼</a>
+                <ul class="dropdown-content">
+                    <li><a href="strukturorganisasikpm.html">Struktur Organisasi</a></li>
+                    <li><a href="#">Kegiatan & Galeri</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Tentang -->
+        <section class="tentang">
+            <h2>Tentang Gampong Tibang</h2>
+            <p>
+                Gampong Tibang merupakan salah satu gampong di Kecamatan Syiah Kuala, Kota Banda Aceh. Website ini dibuat untuk memberikan informasi seputar kegiatan, layanan, dan perkembangan Gampong Tibang.
+            </p>
+        </section>
+
+        <!-- Struktur Gampong -->
+        <section class="data-desa">
+            <h2>Struktur Gampong</h2>
+            <ul>
+                <li><strong>Akan datang</strong></li>
+            </ul>
+        </section>
+
+        <!-- Monografi -->
+        <section class="data-desa">
+            <h2>Monografi Gampong</h2>
+            <ul>
+                <li><strong>Akan datang</strong></li>
+            </ul>
+        </section>
+
+        <!-- Video Profil -->
+        <section class="pemerintahan">
+            <h2>Video Profil Gampong</h2>
+            <ul>
+                <li><strong>Akan datang</strong></li>
+            </ul>
+        </section>
+
+        <!-- Berita -->
+        <section class="berita">
+            <h2>Berita Terkini</h2>
+            <ul>
+                <li><strong>dd mm yyyy:</strong>nama kegiatan</li>
+                <li><strong>tanggal</strong>nama kegiatan</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2025 Gampong Tibang. Dibuat oleh Tim Pojok Statistik UIN Ar-Raniry</p>
+    </footer>
+</body>
+</html>
